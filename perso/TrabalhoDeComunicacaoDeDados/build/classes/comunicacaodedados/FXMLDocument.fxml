@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" minHeight="262.0" prefHeight="606.0" prefWidth="466.0001525878906" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="comunicacaodedados.FXMLDocumentController">
+  <children>
+    <MenuBar layoutY="0.0" prefWidth="320.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem id="" mnemonicParsing="false" onAction="#clicouEnviar" text="Submit" />
+            <MenuItem mnemonicParsing="false" onAction="#clicouOpen" text="Open" fx:id="buttonOpen" />
+            <MenuItem mnemonicParsing="false" onAction="#clicouExit" text="Exit" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <ImageView fx:id="imageView" blendMode="SRC_OVER" disable="false" fitHeight="335.0" fitWidth="446.6666562928616" focusTraversable="false" mouseTransparent="false" opacity="1.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="234.0" AnchorPane.leftAnchor="9.66" AnchorPane.rightAnchor="9.67" AnchorPane.topAnchor="37.0" />
+    <Button fx:id="button" mnemonicParsing="false" onAction="#clicouButton" prefWidth="148.00009999999747" text="Abrir a imagem" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="86.0" AnchorPane.rightAnchor="86.0" />
+    <Label fx:id="label" blendMode="SRC_OVER" cache="true" cacheHint="SPEED" contentDisplay="CENTER" depthTest="ENABLE" graphicTextGap="2.0" labelFor="$label" mnemonicParsing="false" mouseTransparent="false" pickOnBounds="false" prefHeight="188.0" prefWidth="446.6666871905327" text="" textAlignment="LEFT" textOverrun="CLIP" wrapText="false" AnchorPane.bottomAnchor="46.0" AnchorPane.leftAnchor="9.66" AnchorPane.rightAnchor="9.67" AnchorPane.topAnchor="372.0">
+      <font>
+        <Font name="Arial Bold" size="12.0" />
+      </font>
+    </Label>
+  </children>
+</AnchorPane>
