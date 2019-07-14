@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="464.9998779296875" prefWidth="625.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="exame.FXMLDocumentController">
+  <children>
+    <MenuBar layoutX="0.0" layoutY="0.0" prefWidth="625.0">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#clicouAbrir" text="Load" />
+            <MenuItem mnemonicParsing="false" onAction="#clicouSave" text="Save" />
+            <MenuItem mnemonicParsing="false" onAction="#clicouExit" text="Exit" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <TableView id="T" fx:id="tabela" layoutX="0.0" layoutY="24.0" prefHeight="411.0" prefWidth="625.0">
+      <columns>
+        <TableColumn onEditCommit="#editarTime" prefWidth="125.0" text="Times" fx:id="times" />
+        <TableColumn onEditCommit="#editarVitorias" prefWidth="125.0" text="Vitorias" fx:id="vitorias" />
+        <TableColumn prefWidth="125.0" text="Empates" fx:id="empates" />
+        <TableColumn prefWidth="125.0" text="Derrotas" fx:id="derrotas" />
+        <TableColumn prefWidth="125.0" text="Pontos" fx:id="pontos" />
+      </columns>
+    </TableView>
+    <HBox id="Hbox" fx:id="hbox" prefHeight="29.9998779296875" prefWidth="501.0001220703125" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="435.0">
+      <children>
+        <TextField fx:id="addTime" prefWidth="100.0" promptText="Times" text="" />
+        <TextField fx:id="addVitorias" prefWidth="100.0" promptText="Vitorias" />
+        <TextField fx:id="addEmpates" prefWidth="100.0" promptText="Empates" />
+        <TextField fx:id="addDerrotas" prefWidth="100.0" promptText="Derrotas" />
+        <TextField fx:id="addPontos" prefWidth="100.0" promptText="Pontos" />
+        <Button fx:id="adicionar" mnemonicParsing="false" onAction="#clicouAdicionar" text="Adicionar" />
+        <Button fx:id="remover" mnemonicParsing="false" onAction="#clicouDeletar" text="Remober" />
+      </children>
+      <padding>
+        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+      </padding>
+    </HBox>
+  </children>
+</AnchorPane>
