@@ -93,7 +93,7 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     public void editarTime(TableColumn.CellEditEvent<DadosDoTime, String> event){
         DadosDoTime atualizar = tabela.getSelectionModel().getSelectedItem();
-        atualizar.setTime(event.getNewValue());
+        /*atualizar.setTime(event.getNewValue());*/
         for (int i = 0; i < listaDeTimes.size(); i++) {
             if(listaDeTimes.get(i).equals(atualizar)){
                 listaDeTimes.get(i).setTime(event.getNewValue());
@@ -107,6 +107,39 @@ public class FXMLDocumentController implements Initializable {
         for (int i = 0; i < listaDeTimes.size(); i++) {
             if(listaDeTimes.get(i).equals(atualizar)){
                 listaDeTimes.get(i).setVitorias(event.getNewValue());
+            }
+        }
+        
+    }
+    
+    @FXML
+    public void editarEmpates(TableColumn.CellEditEvent<DadosDoTime, String> event){
+        DadosDoTime atualizar = tabela.getSelectionModel().getSelectedItem();
+        for (int i = 0; i < listaDeTimes.size(); i++) {
+            if(listaDeTimes.get(i).equals(atualizar)){
+                listaDeTimes.get(i).setEmpates(event.getNewValue());
+            }
+        }
+        
+    }
+    
+    @FXML
+    public void editarDerrotas(TableColumn.CellEditEvent<DadosDoTime, String> event){
+        DadosDoTime atualizar = tabela.getSelectionModel().getSelectedItem();
+        for (int i = 0; i < listaDeTimes.size(); i++) {
+            if(listaDeTimes.get(i).equals(atualizar)){
+                listaDeTimes.get(i).setDerrotas(event.getNewValue());
+            }
+        }
+        
+    }
+    
+    @FXML
+    public void editarPontos(TableColumn.CellEditEvent<DadosDoTime, String> event){
+        DadosDoTime atualizar = tabela.getSelectionModel().getSelectedItem();
+        for (int i = 0; i < listaDeTimes.size(); i++) {
+            if(listaDeTimes.get(i).equals(atualizar)){
+                listaDeTimes.get(i).setPontos(event.getNewValue());
             }
         }
         
